@@ -1,0 +1,88 @@
+<section class="footer">
+		<a class="ec-logo-footer" href="https://www.elconfidencial.com/" target="_blank">
+			<amp-img 
+				src="https://www.ecestaticos.com/file/56e3fdf95eea6a894eeb851024886946/1499331003-ic_ec_footer.png"
+				width="154"
+				height="18">
+			</amp-img>
+		</a>
+		<div class="footer__legal">
+			<p class="footer__copy">&copy; TITANIA COMPAÑÍA EDITORIAL, S.L. {{ now.Year }}. España. <span class="footer__copyright">Todos los derechos reservados</span></p>
+			<ul class="footer__menu">
+				<li class="footer__menu-item">
+					<a class="footer__menu-link footer__menu-link--condiciones" href="https://www.elconfidencial.com/politicas-de-privacidad/condiciones/" target="_blank">Condiciones</a>
+				</li>
+				<li class="footer__menu-item">
+					<a class="footer__menu-link footer__menu-link--privacidad" href="https://www.elconfidencial.com/politicas-de-privacidad/privacidad/" target="_blank">Política de Privacidad</a>
+				</li>
+				<li class="footer__menu-item">
+					<a class="footer__menu-link footer__menu-link--cookies" href="https://www.elconfidencial.com/politicas-de-privacidad/cookies/" target="_blank"><span class="hidden-mobile">Política de </span>Cookies</a>
+				</li>
+				<li class="footer__menu-item">
+					<a class="footer__menu-link footer__menu-link--transparencia" href="https://www.elconfidencial.com/politicas-de-privacidad/transparencia/" target="_blank">Transparencia</a>
+				</li>
+			</ul>
+			<p class="footer__note">Auditado por <em>Comscore</em></p>
+		</div>
+		<amp-analytics type="googleanalytics" id="gaFooter">
+			<script type="application/json">
+				{
+					"vars": {
+						"account": "{{ .Site.GoogleAnalytics }}"
+					},
+					"triggers": {
+						"trackClickOnLogoECFooter" : {
+							"on": "click",
+							"selector": ".ec-logo-footer",
+							"request": "event",
+							"vars": {
+								"eventCategory": "Especial - {{ .Site.Title }}",
+								"eventAction": "clic",
+								"eventLabel": "Logo El Confidencial en footer"
+							}
+						},
+						"trackClickOnAvisoLegal" : {
+							"on": "click",
+							"selector": ".footer__menu-link--condiciones",
+							"request": "event",
+							"vars": {
+								"eventCategory": "Especial - {{ .Site.Title }}",
+								"eventAction": "clic",
+								"eventLabel": "Condiciones"
+							}
+						},
+						"trackClickOnQuienesSomos" : {
+							"on": "click",
+							"selector": ".footer__menu-link--privacidad",
+							"request": "event",
+							"vars": {
+								"eventCategory": "Especial - {{ .Site.Title }}",
+								"eventAction": "clic",
+								"eventLabel": "Política de Privacidad"
+							}
+						},
+						"trackClickOnPrivacidad" : {
+							"on": "click",
+							"selector": ".footer__menu-link--cookies",
+							"request": "event",
+							"vars": {
+								"eventCategory": "Especial - {{ .Site.Title }}",
+								"eventAction": "clic",
+								"eventLabel": "Política de Cookies"
+							}
+						},
+						"trackClickOnCookies" : {
+							"on": "click",
+							"selector": ".footer__menu-link--transparencia",
+							"request": "event",
+							"vars": {
+								"eventCategory": "Especial - {{ .Site.Title }}",
+								"eventAction": "clic",
+								"eventLabel": "Transparencia"
+							}
+						}
+					}
+				}
+			</script>
+		</amp-analytics>
+	</section>

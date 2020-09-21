@@ -1,0 +1,13 @@
+  {{ partial "head/site-head.html" . }}
+  <body>
+    {{ partial "analytics/top-analytics.html" . }}
+
+    {{ partial "aside/site-aside.html" . }}
+    
+    {{.Content}}
+
+    {{ partial "analytics/bottom-analytics.html" . }}
+
+    {{ partial "footer/site-footer.html" . }}
+  </body>
+</html>

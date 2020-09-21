@@ -1,0 +1,18 @@
+<amp-analytics type="comscore">
+		<script type="application/json">
+			{"vars": {"c2": "{{ $.Site.Params.Comscore }}"}}
+		</script>
+	</amp-analytics>
+
+	<amp-analytics type="googleanalytics" id="gaPageView">
+		<script type="application/json">
+			{
+				"vars": {
+					"account": "{{ .Site.GoogleAnalytics }}"
+				},
+				"triggers": {
+					"trackPageview": { "on": "visible", "request": "pageview" }
+				}
+			}
+		</script>
+	</amp-analytics>

@@ -1,0 +1,38 @@
+<amp-analytics type="chartbeat" id="chartbeat1">
+		<script type="application/json">
+			{
+				"vars": {
+					"uid": "{{ $.Site.Params.Chartbeat }}",
+					"title": "{{ .Site.Title }}",
+					"authors": "{{ $.Site.Params.Author }}",
+					"sections": "{{ $.Site.Params.NewsSection }}",
+					"canonicalHost": "elconfidencial.com",
+					"domain": "elconfidencial.com"
+				}
+			}
+		</script>
+	</amp-analytics>
+
+	<amp-analytics type="googleanalytics" id="gaScroll">
+		<script type = "application/json" >
+			{
+	    		"vars": {
+	      			"account": "{{ .Site.GoogleAnalytics }}"
+	    		},
+	    		"triggers": {
+	      			"scrollPings": {
+	        			"on": "scroll",
+	        			"request": "event",
+	        			"scrollSpec": {
+	          				"verticalBoundaries": [0, 25, 50, 75,100]
+	        			},
+	        			"vars": {
+	          				"eventCategory": "Especial - {{ .Site.Title }}",
+							"eventAction": "scroll",
+							"eventLabel": "${verticalScrollBoundary}%"
+	        			}
+	      			}
+	    		}
+	  		} 
+		</script> 
+	</amp-analytics>

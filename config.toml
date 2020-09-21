@@ -1,0 +1,13 @@
+languageCode = "es-es"
+title = "La “estafa” del faraón de Dos Hermanas"
+googleAnalytics = "UA-330997-1"
+disableHugoGeneratorInject = true
+
+[params]
+	comscore = "7215267"
+	chartbeat = "51507"
+	facebookId = "1482570825397489"
+	description = "La Policía Nacional asegura que Sergio J. Sánchez González lideró una “estafa piramidal” que captó a más de 15.000 personas y defraudó 12 millones de euros, una red que se extendió por Francia, Portugal y España"
+	author = "Pablo Gabilondo"
+	newsSection = "España"
+	newsImage = "https://www.ecestaticos.com/file/4d4ae36ede4598b60926638fef780bad/1583320391-rrss.jpg"
